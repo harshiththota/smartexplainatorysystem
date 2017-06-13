@@ -8,6 +8,6 @@ app.set('view engine', 'html');
 app.use(express.static('views'));
 
 
-app.listen(8080, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log('Example app listening on port 3000!')
 });
